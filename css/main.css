@@ -1,0 +1,302 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h3 {
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+:root {
+  --background-color:#0b111e;
+  --main-color: #6a639c;
+  --hover-color:#a395e9;
+  --section-font-size:30px;
+  --glassEffect:rgba(231, 225, 225, 0.452);
+  --h1-size:40px;
+  --h2-size:30px;
+  --h3-size:20px;
+  --h4-size:15px;
+  --h5-size:10px;
+}
+
+body {
+  background-color: var(--background-color);
+  height: 9000px;
+  overflow-x: hidden;
+}
+
+header .navbar-brand {
+  font-size: 20px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+header .light-theme {
+  color: white;
+  cursor: pointer;
+}
+
+header .navbar-navigation {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+header .navbar-navigation .navbar-holder ul {
+  background-color: var(--glassEffect);
+  padding: 7px 20px;
+  border-radius: 30px;
+  gap: 10px;
+}
+
+header .navbar-navigation .navbar-holder ul li {
+  background-color: var(--main-color);
+  border-radius: 50%;
+  font-size: 12px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+header .navbar-navigation .navbar-holder ul li:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  background-color: var(--hover-color);
+}
+
+header .navbar-navigation .navbar-holder ul li a {
+  color: white;
+}
+
+.heading {
+  min-height: calc(100vh - 56px);
+}
+
+.heading .headingHolder {
+  color: white;
+}
+
+.heading .headingHolder h5 {
+  font-size: var(--h5-size);
+}
+
+.heading .headingHolder h4 {
+  font-size: var(--h4-size);
+}
+
+.heading .headingHolder .buttons {
+  gap: 10px;
+}
+
+.heading .headingHolder .buttons .btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid var(--hover-color);
+  color: var(--main-color);
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+}
+
+.heading .headingHolder .buttons .btn:hover {
+  background-color: var(--hover-color);
+  color: white;
+}
+
+.heading .headingHolder .buttons .btn.active {
+  background-color: var(--hover-color);
+  color: black;
+}
+
+.heading .controls .social-controls {
+  padding-top: 140px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.heading .controls .social-controls .control {
+  padding: 6px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: var(--glassEffect);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.heading .controls .social-controls .control:hover {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.heading .controls .social-controls .control:hover i {
+  color: white;
+}
+
+.heading .controls .social-controls .control i {
+  color: var(--hover-color);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.heading .controls .social-controls span {
+  height: 30px;
+  width: 1px;
+  background-color: white;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.heading .controls .main-photo {
+  height: 400px;
+  width: 300px;
+  background-color: #a395e9;
+  border-top-left-radius: 220px;
+  border-top-right-radius: 220px;
+}
+
+.heading .controls .main-photo img {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  padding-bottom: 0;
+}
+
+.heading .controls .scroll-dowm {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  padding-top: 140px;
+  color: var(--main-color);
+}
+
+.heading .controls .scroll-dowm span {
+  -webkit-transform: rotateZ(-270deg);
+          transform: rotateZ(-270deg);
+}
+
+.aboutme .section-heading {
+  margin-bottom: 100px;
+}
+
+.aboutme .section-heading h5 {
+  font-size: 12px;
+}
+
+.aboutme .row {
+  --bs-gutter-x:150px;
+}
+
+.aboutme .row .about-img img {
+  max-width: 100%;
+  border-radius: 40px;
+}
+
+.aboutme .row .about-info {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.aboutme .row .about-info .about-info-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutme .row .about-info .about-info-details div {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  padding: 13px 15px;
+  background-color: var(--glassEffect);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutme .row .about-info .about-info-details div i {
+  font-size: 18px;
+  color: var(--hover-color);
+  margin-bottom: 10px;
+}
+
+.aboutme .row .about-info .about-info-details div h5 {
+  font-size: 16px;
+  color: white;
+}
+
+.aboutme .row .about-info .about-info-details div span {
+  font-size: 14px;
+  color: #acacac !important;
+}
+
+.aboutme .row .about-info .about-details {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.aboutme .row .about-info .aboutBtn a {
+  padding: 10px 20px;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 700;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.aboutme .row .about-info .aboutBtn a:hover {
+  border: 1px solid var(--hover-color);
+  background-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .aboutme {
+    margin-top: 50px;
+  }
+  .about-info-details {
+    margin-top: 30px;
+  }
+  .about-info {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
